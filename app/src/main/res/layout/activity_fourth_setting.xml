@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.greenhub.counter.Activity.FourthSettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_rectangle_down">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.4" />
+                    <TextView
+                        android:id="@+id/tv_step_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="38sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey"
+                        android:text="@string/tv_step_4" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:id="@+id/tv_task_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/grey"
+                        android:text="@string/tv_task4" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.4" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_residential_complex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="15sp"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/tv_residential_complex" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/et_residential_complex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:paddingStart="15sp"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:hint="@string/et_residential_complex"
+                    android:textColor="@color/grey"
+                    android:text="@string/et_residential_complex" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_entrance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="15sp"
+                    android:textColor="@color/grey"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="@string/tv_entrance" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/et_entrance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="15sp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:textColor="@color/grey"
+                    android:hint="@string/et_entrance"
+                    android:text="@string/et_entrance" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:textStyle="bold"
+                    android:paddingStart="15sp"
+                    android:textSize="16sp"
+                    android:text="@string/tv_floor" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/et_floor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="15sp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:ems="10"
+                    android:hint="@string/et_floor"
+                    android:inputType="numberDecimal"
+                    android:text="@string/et_floor"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_Apartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="15sp"
+                    android:textColor="@color/grey"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="@string/tv_Apartment" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/et_Apartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:paddingStart="15sp"
+                    android:hint="@string/et_Apartment"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:textColor="@color/grey"
+                    android:text="@string/et_Apartment" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10">
+
+                    <ImageButton
+                        android:id="@+id/b_nextStep5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="onClickAddMeter"
+                        android:background="@drawable/rounded_corner_button" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/b_nextStep5"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </FrameLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

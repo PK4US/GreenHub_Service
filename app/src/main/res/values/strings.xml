@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name" translatable="false">GreenHub Service</string>
+    <string name="number_picker_formatter" translatable="false">%01d</string>
+    <string name="sEmailPhone">Пошта або номер телефону</string>
+    <string name="sPassword">Пароль</string>
+    <string name="sRestorePassword">Відновити пароль</string>
+    <string name="sLogin">Вхід</string>
+    <string name="sMainPageName">Головна</string>
+
+    <string name="sWrongLogin">Невірний логін</string>
+    <string name="sIncorrectLoginOrPassword">Невірний логін або пароль</string>
+    <string name="sNeedInsertLogin">Ви не ввели адресу електронної пошти або номер телефон</string>
+    <string name="sNeedInserPassword">Вы не ввели пароль</string>
+    <string name="sNeedInserName">Вы не ввели им\'я</string>
+    <string name="sAttemptLimitExceeded">Ліміт спроби перевищено, будь ласка, спробуйте через деякий час</string>
+    <string name="sUserSeccessfullyConfirmed">Користувача успішно підтверджено</string>
+    <string name="sFailure">Відмова</string>
+    <string name="sSuccess">Успішно</string>
+
+    <string name="sConfirmation">Підтвердження</string>
+    <string name="sKeyError">Ключі не співпадають</string>
+    <string name="sPinNotification">Постійний моніторинг</string>
+    <string name="sServerError">Відсутній зв’язок із сервером</string>
+    <string name="sErrorOnServer">Помилка сервера</string>
+    <string name="sFillCheck">Заповніть всі поля</string>
+    <string name="sHotspotError">Щоб продовжити, будь ласка, вимкніть точку доступу</string>
+    <string name="sMobileNetworkError">Щоб продовжити, будь ласка, вимкніть мобільний інтернет</string>
+    <string name="sWiFiError">Щоб продовжити, будь ласка, увімкніть WiFi</string>
+    <string name="sMessage">Повідомлення</string>
+    <string name="sConfirmationText">Щоб підтвердити свій акаунт, введіть код безпеки, який ми вам надіслали</string>
+    <string name="sName">Ім’я</string>
+    <string name="sWarning">Попередження</string>
+
+    <string name="tv_heading" translatable="false">Вітаємо в системі!</string>
+    <string name="text_step_1" translatable="false">1/4</string>
+    <string name="tv_task1" translatable="false">Вибиріть тип лічильника із запропонованих варіантів</string>
+    <string name="b_nextStep2" translatable="false">Далі</string>
+
+    <string name="tv_step_2" translatable="false">2/4</string>
+    <string name="tv_task2" translatable="false">Відскануйте лічильник так, щоб було видно показання та ID</string>
+    <string name="tv_step_3" translatable="false">3/4</string>
+    <string name="tv_task3" translatable="false">Провірьте дані лічильника та виправте за необхідності</string>
+    <string name="tv_type_meter" translatable="false">Тип лічильника</string>
+    <string name="et_type_meter" translatable="false">Лічильник горячої води</string>
+    <string name="tv_id_meter" translatable="false">ID лічильника</string>
+    <string name="et_id_meter" translatable="false">23896328</string>
+    <string name="tv_indication_meter" translatable="false">Показания</string>
+    <string name="et_indication_meter" translatable="false">00065,324</string>
+    <string name="tv_id_label" translatable="false">ID наклейки</string>
+    <string name="et_id_label" translatable="false">29047358</string>
+    <string name="b_nextStep4" translatable="false">Далі</string>
+
+    <string name="tv_step_4" translatable="false">4/4</string>
+    <string name="tv_task4" translatable="false">Заповніть дані знаходження лічильника</string>
+    <string name="tv_residential_complex" translatable="false">Житловий компелекс</string>
+    <string name="et_residential_complex" translatable="false">ЖК Dream City</string>
+    <string name="tv_entrance" translatable="false">Підїзд</string>
+    <string name="et_entrance" translatable="false">2</string>
+    <string name="tv_floor" translatable="false">Поверх</string>
+    <string name="et_floor" translatable="false">1</string>
+    <string name="tv_Apartment" translatable="false">Квартира/Приміщення</string>
+    <string name="et_Apartment" translatable="false">Сторожова</string>
+    <string name="b_nextStep5" translatable="false">Додати лічильник</string>
+    <string name="dialog_message" translatable="false">Вітаємо, лічильник успішно додано</string>
+</resources>

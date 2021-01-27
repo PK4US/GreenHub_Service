@@ -1,0 +1,32 @@
+<resources>
+    <string name="sEmailPhone">Пошта або номер телефону</string>
+    <string name="sPassword">Пароль</string>
+    <string name="sRestorePassword">Відновити пароль</string>
+    <string name="sLogin">Логін</string>
+    <string name="sMainPageName">Головна</string>
+
+    <string name="sWrongLogin">Невірний логін</string>
+    <string name="sIncorrectLoginOrPassword">Невірний логін або пароль</string>
+    <string name="sNeedInsertLogin">Ви не ввели адресу електронної пошти або номер телефон</string>
+    <string name="sNeedInserPassword">Вы не ввели пароль</string>
+    <string name="sNeedInserName">Вы не ввели им\'я</string>
+    <string name="sAttemptLimitExceeded">Ліміт спроби перевищено, будь ласка, спробуйте через деякий час</string>
+    <string name="sUserSeccessfullyConfirmed">Користувача успішно підтверджено</string>
+    <string name="sFailure">Відмова</string>
+    <string name="sSuccess">Успішно</string>
+
+    <string name="sConfirmation">Підтвердження</string>
+    <string name="sKeyError">Ключі не співпадають</string>
+    <string name="sPinNotification">Постійний моніторинг</string>
+    <string name="sServerError">Відсутній зв’язок із сервером</string>
+    <string name="sErrorOnServer">Помилка сервера</string>
+    <string name="sFillCheck">Заповніть всі поля</string>
+    <string name="sHotspotError">Щоб продовжити, будь ласка, вимкніть точку доступу</string>
+    <string name="sMobileNetworkError">Щоб продовжити, будь ласка, вимкніть мобільний інтернет</string>
+    <string name="sWiFiError">Щоб продовжити, будь ласка, увімкніть WiFi</string>
+    <string name="sMessage">Повідомлення</string>
+    <string name="sConfirmationText">Щоб підтвердити свій акаунт, введіть код безпеки, який ми вам надіслали</string>
+    <string name="sName">Ім’я</string>
+    <string name="sWarning">Попередження</string>
+
+</resources>

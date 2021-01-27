@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.greenhub.counter">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="com.greenhub.counter.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GreenHub"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup">
+
+        <activity android:name="com.greenhub.counter.login_screen.LoginActivity"
+            android:launchMode="singleInstance"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GreenHub"
+            android:exported="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <data android:scheme="startappgreenhub" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.greenhub.counter.Activity.StartActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.greenhub.counter.Activity.MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" >
+            <intent-filter>
+                <action android:name="FIRST_SETTING_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    </activity>
+
+        <activity android:name="com.greenhub.counter.Activity.SecondSettingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="SECOND_SETTING_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.greenhub.counter.Activity.ThirdSettingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="THIRD_SETTING_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.greenhub.counter.Activity.FourthSettingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="FOURTH_SETTING_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.greenhub.counter.backend.NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

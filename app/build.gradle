@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.greenhub.counter"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 104
+        versionName "1.0.4"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.1@aar'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.prolificinteractive:material-calendarview:2.0.1'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.1.1'
+    implementation 'com.shawnlin:number-picker:2.4.8'
+
+    implementation 'com.squareup.okhttp:okhttp:2.5.0'
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+
+    implementation 'com.amazonaws:aws-android-sdk-core:2.16.3'
+    implementation 'com.amazonaws:aws-android-sdk-cognito:2.16.3'
+    implementation 'com.amazonaws:aws-android-sdk-cognitoauth:2.16.3'
+
+    implementation 'com.google.android.gms:play-services-base:17.3.0'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+    implementation 'com.clj.fastble:FastBleLib:2.3.4'
+
+    implementation ('com.amazonaws:aws-android-sdk-mobile-client:2.16.13@aar') { transitive = true }
+    implementation 'com.github.stfalcon:smsverifycatcher:0.3.2'
+    implementation 'com.google.android.material:material:1.1.0'
+
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
+    implementation 'testfairy:testfairy-android-sdk:1.11.25'
+
+
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+
+}
