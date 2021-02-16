@@ -86,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center"
-                    android:weightSum="2.2">
+                    android:weightSum="2.1">
                     <ImageButton
                         android:id="@+id/iv_electricity_meter"
                         android:layout_width="0dp"
@@ -98,7 +98,7 @@
                     <Space
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.2" />
+                        android:layout_weight="0.1" />
                     <ImageButton
                         android:id="@+id/iv_cold_water_meter"
                         android:layout_width="0dp"
@@ -128,7 +128,7 @@
                      android:layout_height="wrap_content"
                      android:orientation="horizontal"
                      android:gravity="center"
-                     android:weightSum="2.2">
+                     android:weightSum="2.1">
 
                 <ImageButton
                     android:id="@+id/iv_hot_water_meter"
@@ -142,7 +142,7 @@
                     <Space
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.2" />
+                        android:layout_weight="0.1" />
 
                 <ImageButton
                     android:id="@+id/iv_heating_meter"

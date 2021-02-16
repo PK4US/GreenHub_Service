@@ -108,6 +108,7 @@ public class SecondSettingActivity extends AppCompatActivity {
                         intent.putExtra("type_Of_Meter2", typeOfMeter2);
 
                         startActivity(intent);
+                        finish();
                     }
                 }
             }

@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Theme.GreenHub" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/green</item>
@@ -14,8 +14,4 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="PopupAnimation">
-        <item name="android:windowEnterAnimation">@anim/popup_show</item>
-        <item name="android:windowExitAnimation">@anim/popup_hide</item>
-    </style>
 </resources>

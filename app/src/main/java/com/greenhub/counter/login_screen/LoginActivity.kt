@@ -24,8 +24,6 @@ import com.greenhub.counter.backend.NetworkChangeReceiver
 class LoginActivity : AppCompatActivity(), View.OnTouchListener, LoginProvider.ViewProvider {
 
     private lateinit var mNetworkChangeReceiver: NetworkChangeReceiver
-
-
     private lateinit var btnLogin: ImageButton
     private var etLogin: EditText? = null
     private var etPassword: EditText? = null
@@ -56,17 +54,14 @@ class LoginActivity : AppCompatActivity(), View.OnTouchListener, LoginProvider.V
         btnLogin = findViewById(R.id.btnLogin)
 //        btnLogin.setOnClickListener { mPresenter.startLogin(etLogin!!.text.toString(), etPassword!!.text.toString())}
 
-
+//__________________________________________________________________________________________________
         val FIRST_SETTING_ACTIVITY = "FIRST_SETTING_ACTIVITY"
         btnLogin.setOnClickListener {
             (HapticFeedbackConstants.VIRTUAL_KEY)
-
-
             val intent = Intent(FIRST_SETTING_ACTIVITY)
             startActivity(intent)
             finish()}
-
-
+//__________________________________________________________________________________________________
 
         val filter = IntentFilter()
         filter.addAction("android.net.conn.CONNECTIVITY_CHANGE")

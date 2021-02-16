@@ -143,6 +143,22 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(SECOND_SETTING_ACTIVITY);
             intent.putExtra("type_Of_Meter",typeOfMeter);
             startActivity(intent);
+            finish();
         }else Toast.makeText(this,"Вібиріть тип лічильника",Toast.LENGTH_SHORT).show();
     }
+
+
+//     R.id.logout_item -> {
+//                            val sharedPreferences = context!!.getSharedPreferences("LOGIN", Context.MODE_PRIVATE)
+//                            val edi = sharedPreferences.edit()
+//                            edi.putLong("lastEnterTime", 0)
+//                            edi.apply()
+//
+//                            val intent = Intent(context, LoginActivity::class.java)
+//                            startActivity(intent)
+//                            activity!!.finish()
+//                            HTTPClient.getInstance()
+//                                .logoutAmazonUserGlobal(AmazonRegistration.getInstance().getToken()!!)
+//                        }
+//                    }
 }

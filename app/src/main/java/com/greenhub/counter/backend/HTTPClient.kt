@@ -46,9 +46,7 @@ class HTTPClient(context: Context) {
     private var mCallbackAmazon: Callback? = null
     private var mLogoutCallbackAmazon: Callback? = null
     private var mHostUrl: String? = null
-
     private var mHandler: Handler? = null
-
     private var mLoginActivityListener: LoginActivityListener? = null
 
     init {
@@ -273,18 +271,55 @@ class HTTPClient(context: Context) {
         }
     }
 
+    //_____________________
+    @Throws(IOException::class)
     fun rcCheck() {
-        val token: String ="{"+ AmazonRegistration.getInstance().getToken()!! + "}"
-        val request: Request = Request.Builder()
-            .url(mHostUrl + "counterTypes")
-            .addHeader("acctoken", token)
-            .build()
-        Log.i("TAG", AmazonRegistration.getInstance().getToken()!!)
-        mClient!!.newCall(request).enqueue(mCallbackRCCheck)
+        val MEDIA_TYPE = MediaType.parse("application/json")
+        val client = OkHttpClient()
+        val postdata = JSONObject()
+        val url = "http://34.252.42.20:1029/counterTypes"
 
-        Log.i("TAG", mCallbackRCCheck.toString())
-        Log.i("TAG", mClient.toString())
+        try {
+            val token = AmazonRegistration.getInstance().getToken()!!
+            postdata.put("acctoken", token)
+        } catch (e: JSONException) {
+            e.printStackTrace()
+        }
+
+        val body = RequestBody.create(MEDIA_TYPE, postdata.toString())
+        val request: Request = Request.Builder()
+            .url(url)
+            .post(body)
+            .header("Accept", "application/json")
+            .header("Content-Type", "application/json")
+            .build()
+
+        client.newCall(request).enqueue(object : Callback {
+            override fun onFailure(call: Call, e: IOException) {
+                val mMessage = e.message.toString()
+                Log.w("OTBETA_OT_CEPBEPA_HET", mMessage)
+                call.cancel()
+            }
+
+            @Throws(IOException::class)
+            override fun onResponse(call: Call, response: Response) {
+                val mMessage = response.body()!!.string()
+                Log.e("OTBET_OT_CEPBEPA", mMessage)
+            }
+        })
+        mClient!!.newCall(request).enqueue(mCallbackRCCheck)
     }
+    //_____________________
+
+
+//    fun rcCheck() {
+//        val request: Request = Request.Builder()
+//            .url(mHostUrl + "boiler/check")
+//            .addHeader("acctoken", AmazonRegistration.getInstance().getToken()!!)
+//            .build()
+//        Log.i("TAG", AmazonRegistration.getInstance().getToken()!!)
+//        mClient!!.newCall(request).enqueue(mCallbackRCCheck)
+//    }
 
     fun getAmazonUser(accessToken: String) {
         Log.v("TSTTTT", accessToken.length.toString())

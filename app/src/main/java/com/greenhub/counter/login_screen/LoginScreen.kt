@@ -59,12 +59,6 @@ class LoginScreen : Fragment(), LoginProvider.ViewProvider, View.OnTouchListener
         TODO("Not yet implemented")
     }
 
-
-    private fun parseSmsCode(message: String): String? {
-        val code = message.substring(message.length-7, message.length-1)
-        return code
-    }
-
     override fun onTouch(v: View?, event: MotionEvent?): Boolean {
        if(v!!.id == btnShowPassword!!.id){
             when (event!!.action) {

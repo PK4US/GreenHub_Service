@@ -58,6 +58,7 @@ public class ThirdSettingActivity extends AppCompatActivity {
             System.out.println(typeOfMeter3);
 
             startActivity(intent);
+            finish();
         } else if (et_indication_meter.getText().length() <9) {
             Toast.makeText(this,"Данные счетчика слишком короткие",Toast.LENGTH_SHORT).show();
         } else if (et_indication_meter.getText().length() >9){
